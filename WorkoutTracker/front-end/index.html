@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Planner</title>
+</head>
+
+<body>
+    <h1>Workout Planner</h1>
+    <div id="workout-form">
+        <label for="workout-type">Workout Type:</label>
+        <input type="text" id="workout-type">
+        <br>
+        <label for="sets">Sets:</label>
+        <input type="number" id="sets" min="1">
+        <br>
+        <label for="reps">Reps:</label>
+        <input type="number" id="reps" min="1">
+        <br>
+        <button onclick="addWorkout()">Add Workout</button>
+        <hr>
+        <h2>Workout Routine:</h2>
+        <ul id="workout-list"></ul>
+        <button onclick="finishWorkout()">Finish</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
